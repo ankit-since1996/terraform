@@ -18,11 +18,6 @@ variable "project_name" {
   type        = string
 }
 
-variable "key_name" {
-  description = "SSH key name"
-  type        = string
-}
-
 variable "enable_monitoring" {
   description = "Enable detailed monitoring"
   type        = bool
