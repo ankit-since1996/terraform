@@ -27,7 +27,6 @@ data "aws_ami" "amazon_linux" {
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = var.instance_type
-  key_name      = var.key_name
 
   monitoring = var.enable_monitoring
 
